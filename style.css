@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@500&display=swap');
+/* GOOGLE FONTS */
 
+/*This is comment section between the pages*/
 :root{
     --main-color: #d3ad7f;
     --black: #13131a;
-    --bg: #010103;
-    --border: .1rem solid rgba(255,255,255,.3);
+    --bg: #f8e4be;
+    --container-color: #f9f6f2;
+    --border: .1rem solid black;
 }
 
 *{
@@ -33,15 +38,17 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: #fff;
+    background: #000;
     border-radius: 5rem;
 
 }
 body{
-    background: var(--black);
+    background-color: var(--container-color) ;
+    min-height: 100vh;
 }
+
 .header{
-    background: var(--black);
+    background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,7 +62,7 @@ body{
     height: 6rem;
 }
 .header .navbar a{
-    color: #fff;
+    color: #000;
     margin: 0 1rem;
     font-size: 1.6rem;
 }
@@ -65,7 +72,7 @@ body{
     padding-bottom: .5rem;
 }
 .header .icons div{
-    color: #fff;
+    color: #000;
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -80,12 +87,12 @@ body{
     display: inline-block;
     padding:.9rem 3rem;
     font-size: 1.7rem;
-    color: #fff;
+    color: #000;
     background: var(--main-color);
     cursor: pointer;
 }
 .btn:hover{
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
 }
 section{
     padding:2rem 7%
@@ -93,7 +100,7 @@ section{
 .heading{
     padding-top: 9rem;
     text-align: center;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
@@ -102,58 +109,6 @@ section{
     color: var(--main-color);
     text-transform: uppercase;
 }
-
-/*Start of menue*/
-
-
-.menu .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-.menu .box-container .box{
-    padding: 5rem;
-    text-align: center;
-    border:var(--border)
-}
-.menu .box-container .box img{
-    height: 10rem;
-    border-radius: 6rem;
-    
-}
-
-.menu .box-container .box h3{
-    color: #fff;
-    font-size: 2rem;
-    padding:1rem 0;
-}
-.menu .box-container .box .price{
-    color: #fff;
-    font-size: 2.5rem;
-    padding: 5rem 0;
-}
-.menu .box-container .box .price span{
-    font-size: 1.5rem;
-    text-decoration: line-through;
-}
-.menu .box-container .box:hover{
-    background:#fff;
-}
-.menu .box-container .box:hover > *{
-    color: var(--black);
-}
-/*End of menue*/
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -183,3 +138,65 @@ section{
         font-size: 2rem;
     }
 }
+
+
+/*End of commen section*/
+
+
+/*Start of menu*/
+
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border:var(--border);
+    border-radius: 3rem;
+}
+.menu .box-container .box img{
+    height: 10rem;
+    border-radius: 6rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.menu .box-container .box h3{
+    color: #000;
+    font-size: 2.5rem;
+    padding:1rem 0;
+    letter-spacing: .2rem;
+    padding-top: 2.5rem;
+}
+.menu .box-container .box .price{
+    color: #000;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.menu .box-container .box:hover{
+    background:rgba(0, 0, 0, 0.599);
+}
+.menu .box-container .box:hover > *{
+    color: white;
+}
+
+
+/*End of menu*/
+
+
+
+
+
+
+
+
+
+
+
