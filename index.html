@@ -1,81 +1,113 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">
-            <img src="Img/coffee-shop-logo-removebg-preview.png" alt="">
+        <a href="index.html" class="logo">
+            <img src="Img/Logo2.png" alt="">
         </a>
 
         <nav class="navbar">
-            <a href="#HOME">Home</a>
-            <a href="#MENU">Menu</a>
-            <a href="#ROASTERY">Roastery</a>
-            <a href="#LOCATION">Location</a>
-            <a href="#ABOUT US">About us</a>
-            <a href="#OUR STORY">Our story</a>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="roastery.html">Roastery</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="makingOf.html">Making of Roast & Co.</a>
+            <a href="ourStory.html">Our story</a>
         </nav>
-
         <div class="icons">
-            <div class="fas fas-search" id="search-btn"></div>
-            <div class="fas fas-shopping-cart" id="cart-btn"></div>
-            <div class="fas fas-bars" id="menu-btn"></div>
+            <div class="fab fa-facebook" id="search-btn"></div>
+            <div class="fab fa-twitter" id="cart-btn"></div>
         </div>
     </header>
+    <!-- Home starts -->
 
-    <section class="menu" id="menu">
+    <section class="home" id="home">
 
-        <h1 class="heading">our <span>menu</span></h1>
+        <div class="content">
+            <h3>Roast & Co.</h3> 
+        
+            <p>Welcome to Roast & Co., where every cup tells a story. Join us to as we craft exquisite coffee experiences, where every sip is an adventure. Our menu has selections of velvety lattes, rich mochas, and intense espressos. For a more delightful experince pair yur favourite brew with our delightful pastries like begal, corissants and classic doughnuts.  Dive into our world of coffee craftsmanship and discover flavors that stir your soul, exclusively at Roast & Co.</p>
+            <a href="menu.html" class="btn">Check it out!</a>
+    </div>
+    </section>
 
-        <div class="box-container">
-            <div class="box">
-                <img src="Images2/latte2.jpg" alt="">
-                <h3>Latte</h3>
-                <div class="price">$5.99 <span>$12.99</span></div>
-                <a href="#" class="btn">Add to cart</a>
-            </div>
+    <!-- Home ends -->
 
-            <div class="box">
-                <img src="Images2/mocha.jpg" alt="">
-                <h3>Mocha</h3>
-                <div class="price">$6.99 <span>$14.99</span></div>
-                <a href="#" class="btn">Add to cart</a>
-            </div>
+    <!-- Form starts-->
 
-            <div class="box">
-                <img src="Images2/Espresso.jpg" alt="">
-                <h3>Espresso</h3>
-                <div class="price">$4.99 <span>$17.99</span></div>
-                <a href="#" class="btn">Add to cart</a>
-            </div>
+    <section class="contact" id="contact">
 
-            <div class="box">
-                <img src="Images2/Bagel.jpg" alt="">
-                <h3>Bagel</h3>
-                <div class="price">$9.99 <span>$19.99</span></div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
+        <h1 class="heading"> <span>our</span> location </h1>
 
-            <div class="box">
-                <img src="Images2/Chocolate-cake.jpg" alt="">
-                <h3>Chocolate Cake</h3>
-                <div class="price">$15.99 <span>$20.99</span></div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-            
-            <div class="box">
-                <img src="Images2/Doughnt.jpg" alt="">
-                <h3>Doughnet</h3>
-                <div class="price">$13.99 <span>$17.99</span></div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
+        <div class="row">
 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.9597373478814!2d50.544378599999995!3d26.165440699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49ae681cfe1d03%3A0x5d6f8beb2652d114!2sPolytechnic%20Parking!5e0!3m2!1sen!2sbh!4v1702452928843!5m2!1sen!2sbh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="" id="form">
+                <h3>Register</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="First Name" id="fName">
+                </div>
+                <span id="error-fName"></span>
+
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Last Name" id="lName">
+                </div>
+                <span id="error-lName"></span>
+
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Email" id="email">
+                </div>
+                <span id="error-email"></span>
+
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="Phone" id="phone">
+                </div>
+                <span id="error-phone"></span>
+                <br>
+
+                <input class="btn" type="submit" value="Submit">
+                <br>
+                <span id="success"></span>
+                </form>
         </div>
+    </section>
+
+    <!-- Form ends -->
+
+
+    <!-- Footer starts -->
+    <section class="footer">
+
+        <div class="shar">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="roastery.html">Roastery</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="makingOf.html">Making of Roast & Co.</a>
+            <a href="ourStory.html">Our story</a>
+        </div>
+        <div class="credit">Created by <span> Faisal Ali & Ali Althawadi </span> | all rights reserved</div>
     </section>
 </body>
 </html>
